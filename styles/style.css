@@ -1,0 +1,243 @@
+:root{
+    --primary-blue: #003366;
+    --primary-purple: #8A57BC;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:focus{
+    outline: none ;
+}
+
+/* Header */
+
+#header_div{
+    background-color: #003366;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header_div_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.acc_cta{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em 0;
+    padding-right: 1em;
+}
+
+.acc_cta h4{
+    padding:0 0.5em;
+    margin: 0;
+}
+
+.acc_cta #login{
+    border-right: 3px solid #F8F8FA;
+}
+
+.landing{
+    min-height: 100vh;
+    background-color: #8A57BC;
+    color: #fff;
+    padding: 1em 0.5em 0.5em 2em;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 2em;
+}
+
+.socials img{
+    margin:0 1.2em
+}
+
+
+/* Landing */
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title_div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title_div_text{
+    margin-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.title_div_text h4, .title_div_text h5{
+    margin: 0;
+}
+
+.nav_links_div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 2em;
+}
+
+.nav_links_div ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav_links_div ul li{
+    flex: 1;
+    list-style: none;
+}
+
+.nav_links_div ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1em;
+    text-align: left;
+}
+
+#sign_up_button{
+    border-radius: 0.5em;
+    box-shadow: none;
+    border: 0;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding:0.5em 0.8em;
+    color: #003366;
+}
+
+.half_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.half_content > img{
+    min-width: 20em;
+    max-width: 60%;
+}
+
+.titles h1{
+    font-size: 3em;
+}
+
+.titles_btns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: flex-end; */
+}
+
+#sub, #play{
+    border-radius: 0.5em;
+    box-shadow: none;
+    border: 0;
+    margin: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#sub{
+    padding:1.2em 3em;
+    color: #003366;
+    text-transform: uppercase;
+}
+
+#play{
+    padding:1.2em 1em;
+    color: #fff;
+    background-color: #003366;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#play img{
+    margin-right: 1em;
+}
+
+/* Info Page */
+.info_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    color: #003366;
+}
+
+.info_page{
+    display: flex;
+    flex-direction: row;
+    padding: 5em 1em 2em 1em;
+    background: linear-gradient(
+        180deg,
+        rgba(138, 87, 188, 0.2) 0%, 
+        rgba(248, 248, 250) 55.82%, 
+        rgba(138, 87, 188, 0.2) 100%
+        );
+}
+
+.info_text h2{
+    font-size: 2.2em;
+}
+
+.info_page img{
+    width: 40%;
+}
+
+.info_text button{
+    border-radius: 0.5em;
+    box-shadow: none;
+    border: 0;
+    margin: 1rem 0rem;
+    font-weight: bold;
+    font-size: 1.1em;
+
+    padding:1.2em 1em;
+    width: 10em;
+    color: #fff;
+    background-color: #003366;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3em;
+}
+
+.info_text button img{
+    width: 40px;
+}
