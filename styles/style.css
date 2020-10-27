@@ -1,8 +1,11 @@
 :root{
     --primary-blue: #003366;
     --primary-purple: #8A57BC;
+    --max-width: 1300px;
+    --min-height: 600px;
 }
 
+/* Global */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -18,14 +21,30 @@ button:focus{
     outline: none ;
 }
 
+h2{
+    font-size: 2.5em;
+    color: var(--primary-blue);
+    text-align: center;
+}
+
+h3{
+    font-size: 2em;
+    color: var(--primary-blue);
+}
+
+
 /* Header */
+.header_container{
+    background-color: #003366;
+}
 
 #header_div{
-    background-color: #003366;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    max-width: var(--max-width);
 }
 
 .header_div_content{
@@ -52,11 +71,16 @@ button:focus{
     border-right: 3px solid #F8F8FA;
 }
 
-.landing{
-    min-height: 100vh;
+.landing_container{
     background-color: #8A57BC;
+}
+
+.landing{
+    min-height: var(--min-height);
     color: #fff;
     padding: 1em 0.5em 0.5em 2em;
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
 .socials{
@@ -192,6 +216,15 @@ button:focus{
 }
 
 /* Info Page */
+.info_page_container{
+    background: linear-gradient(
+        180deg,
+        rgba(138, 87, 188, 0.2) 0%, 
+        rgba(248, 248, 250) 55.82%, 
+        rgba(138, 87, 188, 0.2) 100%
+        );
+}
+
 .info_text{
     display: flex;
     flex-direction: column;
@@ -201,26 +234,19 @@ button:focus{
 }
 
 .info_page{
+    max-width: var(--max-width);
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     padding: 5em 1em 2em 1em;
-    background: linear-gradient(
-        180deg,
-        rgba(138, 87, 188, 0.2) 0%, 
-        rgba(248, 248, 250) 55.82%, 
-        rgba(138, 87, 188, 0.2) 100%
-        );
-}
 
-.info_text h2{
-    font-size: 2.2em;
 }
 
 .info_page img{
     width: 40%;
 }
 
-.info_text button{
+.btn_with_icon{
     border-radius: 0.5em;
     box-shadow: none;
     border: 0;
@@ -238,6 +264,129 @@ button:focus{
     font-size: 1.3em;
 }
 
-.info_text button img{
+.btn_with_icon img{
     width: 40px;
 }
+
+/* Services page */
+.services_container{
+    margin: 2em 0;
+}
+
+.services{
+    width: var(--max-width);
+    margin: auto;
+    color: var(--primary-blue);
+}
+
+.card_holder{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: #F8F8FA;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:25px 10px 10px 10px;
+}
+
+.icon_holder{
+    margin: 0 auto 10px auto;
+    padding: 20px;
+    background-color:#E0D4D4;
+}
+
+.card_items{
+    list-style-image: url("./../images/Ellipse\ 9.png");
+}
+
+.card_items li{
+    margin: 15px 25px;
+    font-weight: 600;
+}
+
+.view_full{
+    padding:0.5em 1em;
+    margin-left: 20px;
+}
+
+
+/* Pricing Page */
+.pricing_container{
+    margin:2em 0;
+}
+
+.pricing{
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.pricing_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plans{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan{
+    background-color: #F8F8F4;
+    padding:20px 20px 10px 20px;
+    margin: 10px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+.plan h3{
+    align-self: flex-start;
+    border-bottom: 5px solid var(--primary-purple);
+}
+
+.start_btn{
+    padding:10px 20px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 40px;
+    border: 0;
+    color: var(--primary-blue);
+    background-color: #8A57BC80;
+}
+
+
+/* Contact Page */
+.contact_container{
+    background-color: #8A57BC08;
+    padding: 2em 0;
+}
+
+.contact_page{
+    max-width: var(--max-width);
+    margin:0 auto;
+}
+
+.contact_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+

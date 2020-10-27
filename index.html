@@ -3,84 +3,252 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
         <title>Podcast Services</title>
     </head>
     <body>
         <!-- Header -->
-        <div id="header_div">
-            <div class="header_div_content">
-                <div class="acc_cta">
-                    <img src="./images/Group 2.png" alt="Login icon">
-                    <h4 id="login">Login</h4>
-                    <h4 id="sign_up">Sign Up</h4>
-                </div>
-                <div class="socials">
-                    <img src="./images/fb.png" alt="fb">
-                    <img src="./images/twitter.png" alt="twitter">
-                    <img src="./images/yt.png" alt="youtube">
-                    <img src="./images/ig.png" alt="ig">
-                    <img src="./images/in.png" alt="in">
+        <div class="header_container">
+            <div id="header_div">
+                <div class="header_div_content">
+                    <div class="acc_cta">
+                        <img src="./images/Group 2.png" alt="Login icon">
+                        <h4 id="login">Login</h4>
+                        <h4 id="sign_up">Sign Up</h4>
+                    </div>
+                    <div class="socials">
+                        <img src="./images/fb.png" alt="fb">
+                        <img src="./images/twitter.png" alt="twitter">
+                        <img src="./images/yt.png" alt="youtube">
+                        <img src="./images/ig.png" alt="ig">
+                        <img src="./images/in.png" alt="in">
+                    </div>
                 </div>
             </div>
         </div>
         <!-- First Page -->
-        <div class="landing">
-            <div class="ellipse"></div>
-            <div class="nav">
-                <div class="title_div">
-                    <img src="./images/Vector.png" alt="Logo">
-                    <div class="title_div_text">
-                        <h4>Podcast</h4>
-                        <h5>Service Net</h5>
+        <div class="landing_container">
+            <div class="landing">
+                <div class="ellipse"></div>
+                <div class="nav">
+                    <div class="title_div">
+                        <img src="./images/Vector.png" alt="Logo">
+                        <div class="title_div_text">
+                            <h4>Podcast</h4>
+                            <h5>Service Net</h5>
+                        </div>
+                    </div>
+                    <div class="nav_links_div">
+                        <ul>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <button id="sign_up_button">Sign-up</button>
+                        </ul>
                     </div>
                 </div>
-                <div class="nav_links_div">
-                    <ul>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <button id="sign_up_button">Sign-up</button>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="half_content landing_content">
-                <div class="titles">
-                    <h1>You Hit Records,<br>
-                        We Handle The Rest</h1>
-                    <h4>Save your time and sanity by making us manage  your Podcast
-                      <br>  World Class Support</h4>
-                    <div class="titles_btns">
-                        <button id="sub">Subscribe</button>
-                        <button id="play">
-                            <img src="./images/play.png" alt="">
-                            <span>Play a Sample</span>
-                        </button>
+    
+                <div class="half_content landing_content">
+                    <div class="titles">
+                        <h1>You Hit Records,<br>
+                            We Handle The Rest</h1>
+                        <h4>Save your time and sanity by making us manage  your Podcast
+                          <br>  World Class Support</h4>
+                        <div class="titles_btns">
+                            <button id="sub">Subscribe</button>
+                            <button id="play">
+                                <img src="./images/play.png" alt="">
+                                <span>Play a Sample</span>
+                            </button>
+                        </div>
                     </div>
+                    <img src="./images/Rectangle 6.png" alt="Rectangle 6">
                 </div>
-                <img src="./images/Rectangle 6.png" alt="Rectangle 6">
             </div>
-
-
         </div>
         <!-- Second Page -->
-        <div class="half_content info_page">
-            <div class="info_text">
-                <h2>Professional Podcast Editing,<br> Mixing and Mastering</h2>
-                <h4>Our podcast editing services are especially suited for today’s podcast<br>  
-                    productions, whether audio or video. With us, you wont  believe how<br>
-                easy it is to produce a professional and affordable podcast
-                </h4>
-                <button>
-                    <span>Contact Us</span>
-                    <img src="./images/ic_baseline-double-arrow.png" alt="">
+        <div class="info_page_container">
+            <div class="half_content info_page">
+                <div class="info_text">
+                    <h2>Professional Podcast Editing,<br> Mixing and Mastering</h2>
+                    <h4>Our podcast editing services are especially suited for today’s podcast<br>  
+                        productions, whether audio or video. With us, you wont  believe how<br>
+                    easy it is to produce a professional and affordable podcast
+                    </h4>
+                    <button class="btn_with_icon">
+                        <span>Contact Us</span>
+                        <img src="./images/ic_baseline-double-arrow.png" alt="">
+                    </button>
+                </div>
+    
+                <img src="./images/Rectangle 17.png" alt="Rectangle 7">
+            </div>
+        </div>
+
+    <!-- Services Page -->
+    <div class="services_container">
+        <div class="services">
+        <h2>Our Services</h2>
+        <div class="card_holder">
+
+            <!--Single Card -->
+            <div class="card">
+                <div class="icon_holder">
+                    <img src="./images/onboarding.png" alt="onboarding">
+                    
+                </div>
+                <h2>Onboarding</h2>
+                <ul class="card_items">
+                    <li>Assigning Accounts Manager</li>
+                    <li>Consultation</li>
+                    <li>Content Planing</li>
+                    <li>Studio Setup Assistance</li>
+                    <li>Recording Uploading</li>
+                </ul>
+                <button class="btn_with_icon view_full">
+                    <span>View Full</span>
+                    <img src="./images//ic_baseline-double-arrow.png" alt="">
                 </button>
             </div>
+            <!-- End of Single Card -->
 
-            <img src="./images/Rectangle 17.png" alt="Rectangle 7">
+            <!--Single Card -->
+            <div class="card">
+                <div class="icon_holder">
+                    <img src="./images/designing.png" alt="onboarding">
+                    
+                </div>
+                <h2>Designing</h2>
+                <ul class="card_items">
+                    <li>Assigning Accounts Manager</li>
+                    <li>Consultation</li>
+                    <li>Content Planing</li>
+                    <li>Studio Setup Assistance</li>
+                    <li>Recording Uploading</li>
+                </ul>
+                <button class="btn_with_icon view_full">
+                    <span>View Full</span>
+                    <img src="./images//ic_baseline-double-arrow.png" alt="">
+                </button>
+            </div>
+            <!-- End of Single Card -->
+
+            <!--Single Card -->
+            <div class="card">
+                <div class="icon_holder">
+                    <img src="./images/hoisting.png" alt="onboarding">
+                    
+                </div>
+                <h2>Hoisting</h2>
+                <ul class="card_items">
+                    <li>Assigning Accounts Manager</li>
+                    <li>Consultation</li>
+                    <li>Content Planing</li>
+                    <li>Studio Setup Assistance</li>
+                    <li>Recording Uploading</li>
+                </ul>
+                <button class="btn_with_icon view_full">
+                    <span>View Full</span>
+                    <img src="./images//ic_baseline-double-arrow.png" alt="">
+                </button>
+            </div>
+            <!-- End of Single Card -->
+
+            <!--Single Card -->
+            <div class="card">
+                <div class="icon_holder">
+                    <img src="./images/editing.png" alt="onboarding">
+                    
+                </div>
+                <h2>Editing</h2>
+                <ul class="card_items">
+                    <li>Assigning Accounts Manager</li>
+                    <li>Consultation</li>
+                    <li>Content Planing</li>
+                    <li>Studio Setup Assistance</li>
+                    <li>Recording Uploading</li>
+                </ul>
+                <button class="btn_with_icon view_full">
+                    <span>View Full</span>
+                    <img src="./images//ic_baseline-double-arrow.png" alt="">
+                </button>
+            </div>
+            <!-- End of Single Card -->
+
+           
+
         </div>
+    </div>
+        <!-- End of services page -->
+
+        <!-- Pricing Page -->
+        <div class="pricing_container">
+            <div class="pricing">
+                <h2>Our Pricing</h2>
+                <div class="pricing_content">
+                    <img src="./images/Rectangle 27.png" alt="pricing">
+                    <div class="plans">
+                        <!-- Single Plan -->
+                        <div class="plan">
+                            <h3>Premium</h3>
+                            <div class="price">
+                                <h2>$256</h2>
+                                <p>per MONTH</p>
+                            </div>
+                            <button class="start_btn">
+                                start
+                            </button>
+                        </div>
+                        <!-- End of Single Plan -->
+
+                        <!-- Single Plan -->
+                        <div class="plan">
+                            <h3>Platinum</h3>
+                            <div class="price">
+                                <h2>$399</h2>
+                                <p>per MONTH</p>
+                            </div>
+                            <button class="start_btn">
+                                start
+                            </button>
+                        </div>
+                        <!-- End of Single Plan -->
+
+                        <!-- Single Plan -->
+                        <div class="plan">
+                            <h3>Basic</h3>
+                            <div class="price">
+                                <h2>$199</h2>
+                                <p>per MONTH</p>
+                            </div>
+                            <button class="start_btn">
+                                start
+                            </button>
+                        </div>
+                        <!-- End of Single Plan -->
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Pricing Page -->
+
+    <!-- Contact Page -->
+    <div class="contact_container">
+        <div class="contact_page">
+            <h2>Contact Today</h2>
+            <div class="contact_content">
+                <img src="./images/Rectangle 37.png" alt="Contact">
+                <h3>Trust us <br>with your final results</h3>
+            </div>
+        </div>
+    </div>
+
+
     </body>
+    
 </html>
