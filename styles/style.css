@@ -323,6 +323,8 @@ p{
     justify-content: space-between;
     padding:25px 10px 10px 10px;
     margin: 1em;
+    max-width: 275px;
+    height: 487px;
 }
 
 .icon_holder{
@@ -367,6 +369,10 @@ p{
 .plan h3{
     align-self: flex-start;
     border-bottom: 5px solid var(--primary-purple);
+}
+
+.plan p{
+    text-align: center;
 }
 
 .start_btn{
@@ -419,7 +425,6 @@ p{
 }
 
 .testimonial_images{
-    justify-content: space-between;
     margin: 0 1em;
     max-width: 500px;
 }
