@@ -333,7 +333,13 @@ p{
     background-color:#E0D4D4;
 }
 
+.icon_holder img{
+    width: 55px;
+    height: 55px;
+}
+
 .card_items{
+    min-height: 225px;
     list-style-image: url("./../images/Ellipse\ 9.png");
 }
 
