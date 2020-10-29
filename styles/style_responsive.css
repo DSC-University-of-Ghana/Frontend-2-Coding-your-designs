@@ -1,0 +1,25 @@
+@media(max-width: 770px){
+    .header_container{
+        display: none;
+    }
+
+    .nav_links_div{
+        display: none;
+    }
+    .titles{
+        max-width: 100%;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+}
+
+
+@media(max-width: 500px){
+    
+
+    .sub, .play{
+        margin: 1rem 0rem;
+    }
+
+}

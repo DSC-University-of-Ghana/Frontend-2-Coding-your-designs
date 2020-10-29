@@ -6,6 +6,7 @@
 }
 
 /* Global */
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -21,63 +22,106 @@ button:focus{
     outline: none ;
 }
 
+.blue_txt{
+    color: var(--primary-blue);
+}
+
+.white_txt{
+    color: #fff;
+}
+
+h1{
+    font-size: 3em;
+}
+
 h2{
     font-size: 2.5em;
-    color: var(--primary-blue);
     text-align: center;
 }
 
 h3{
     font-size: 2em;
-    color: var(--primary-blue);
 }
 h4{
     font-size: 1.5em;
-    color: var(--primary-blue);
 }
 
 h5{
     font-size: 1em;
-    color: var(--primary-blue);
 }
 
 p{
     text-align: justify;
-    color: var(--primary-blue);
 }
+
+
+/* Utilities */
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blue_btn{
+    background-color: var(--primary-blue);
+    transition: 0.3s ease-in-out;
+}
+
+.blue_btn:hover{
+    background-color: #328e99;
+}
+
+.white_btn{
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.white_btn:hover{
+    background-color: #328e99;
+    color: #fff;
+
+}
+
+.purple_btn{
+    transition: 0.3s ease-in-out;
+}
+
+.purple_btn:hover{
+    background-color: #328e99;
+    color: #fff;
+}
+
 
 
 /* Header */
 .header_container{
-    background-color: #003366;
+    background-color: var(--primary-blue);
 }
 
 #header_div{
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: flex-end;
     max-width: var(--max-width);
 }
 
 .header_div_content{
     flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: inherit;
 }
 
 .header_div_content h4{
-    color: #fff;
     font-size: 1em;
 } 
 
 .acc_cta{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 1em 0;
     padding-right: 1em;
 }
@@ -97,17 +141,12 @@ p{
 
 .landing{
     min-height: var(--min-height);
-    color: #fff;
-    padding: 1em 0.5em 0.5em 2em;
+    padding: 2em;
     max-width: var(--max-width);
     margin: 0 auto;
 }
 
 .socials{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
     margin-right: 2em;
 }
 
@@ -118,31 +157,17 @@ p{
 
 /* Landing */
 .nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     padding:0 0 2em 0;
 }
 
-.nav h4, .nav h5{
-    color: #fff;
-}
-
 .title_div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .title_div_text{
     margin-left: 0.5em;
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
 }
 
 .title_div_text h4, .title_div_text h5{
@@ -150,32 +175,30 @@ p{
 }
 
 .nav_links_div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: flex-end;
     margin-right: 2em;
 }
 
 .nav_links_div ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .nav_links_div ul li{
     flex: 1;
     list-style: none;
+    transition: 0.2s ease-in;
 }
 
 .nav_links_div ul li a{
     text-decoration: none;
-    color: #fff;
     margin: 0 1em;
     text-align: left;
 }
+
+.nav_links_div ul li:hover{
+    transform: scale(1.1);
+}
+
 
 #sign_up_button{
     border-radius: 0.5em;
@@ -184,15 +207,6 @@ p{
     font-weight: bold;
     font-size: 0.9em;
     padding:0.5em 0.8em;
-    color: #003366;
-}
-
-.half_content{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .half_content > img{
@@ -208,23 +222,12 @@ p{
     margin: 0.4em 0;
 }
 
-.titles h1{
-    font-size: 3em;
-}
 .titles h4{
-    color: #fff;
     font-size: 1.2em;
 }
 
-.titles_btns{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    /* justify-content: flex-end; */
-}
 
-#sub, #play{
+.sub, .play{
     border-radius: 0.5em;
     box-shadow: none;
     border: 0;
@@ -233,22 +236,17 @@ p{
     font-size: 1.1em;
 }
 
-#sub{
+.sub{
     padding:1.2em 3em;
-    color: #003366;
     text-transform: uppercase;
 }
 
-#play{
+.play{
     padding:1.2em 1em;
-    color: #fff;
-    background-color: #003366;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
-#play img{
+.play img{
     margin-right: 1em;
 }
 
@@ -263,11 +261,7 @@ p{
 }
 
 .info_text{
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
-    color: #003366;
 }
 
 .info_text h2{
@@ -277,8 +271,6 @@ p{
 .info_page{
     max-width: var(--max-width);
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
     padding: 5em 1em 2em 1em;
 
 }
@@ -297,10 +289,7 @@ p{
 
     padding:1.2em 1em;
     width: 10em;
-    color: #fff;
     background-color: #003366;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     font-size: 1.3em;
 }
@@ -317,7 +306,6 @@ p{
 .services{
     max-width: var(--max-width);
     margin: auto;
-    color: var(--primary-blue);
 }
 
 .card_holder{
@@ -327,18 +315,11 @@ p{
     gap: 20px;
     justify-content: center;
     align-items: center; */
-        display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .card{
     background-color: #F8F8FA;
-    display: flex;
     align-items: flex-start;
-    flex-direction: column;
     justify-content: space-between;
     padding:25px 10px 10px 10px;
     margin: 1em;
@@ -375,34 +356,11 @@ p{
     margin: 0 auto;
 }
 
-.pricing_content{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.pricing_content img{
-    /* width: 300px; */
-}
-
-.plans{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 .plan{
     background-color: #F8F8F4;
     padding:20px 20px 10px 20px;
     margin: 10px;
     min-height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     width: 220px;
 }
@@ -418,7 +376,6 @@ p{
     font-weight: bold;
     border-radius: 40px;
     border: 0;
-    color: var(--primary-blue);
     background-color: #8A57BC80;
 }
 
@@ -434,13 +391,6 @@ p{
     margin:0 auto;
 }
 
-.contact_content{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
 
 /* Pre Testimonial */
 .testimonial_header_container{
@@ -466,16 +416,9 @@ p{
 .testimonial_content{
     max-width: var(--max-width);
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .testimonial_images{
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     margin: 0 1em;
     max-width: 500px;
@@ -498,7 +441,6 @@ p{
 
 .quote{
    font-size: 1.2em;
-   color: #003366;
 }
 
 
@@ -513,26 +455,14 @@ p{
     margin: 0 auto;
 }
 
-.footer_container h4,
-.footer_container h5,
-.footer_container p{
-    color: #fff;
-}
-
 .footer_sections{
-    display: flex;
-    flex-direction: row;
     align-items: flex-start;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .footer_section{
     max-width: 300px;
     max-height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 1em;
     align-items: flex-start;
 }
 
@@ -546,11 +476,15 @@ p{
 
 .footer_section ul li{
     padding: 0.5em 0;
+    transition: 0.2s ease-in;
 }
 
 .footer_section ul li a{
     text-decoration: none;
-    color: #fff;
+}
+
+.footer_section ul li:hover{
+    transform: scale(1.1);
 }
 
 .footer_section h5{
@@ -568,8 +502,6 @@ p{
 
 .footer_socials{
     min-width: 80%;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -581,12 +513,6 @@ p{
 .sub_footer{
     max-width: var(--max-width);
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
     justify-content: space-between;
 }
 
-.sub_footer h5{
-    color: #fff;
-}

@@ -3,6 +3,8 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/style_responsive.css">
+        <link rel="icon" href="./images/Vector.png">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <title>Podcast Services</title>
     </head>
@@ -10,13 +12,13 @@
         <!-- Header -->
         <div class="header_container">
             <div id="header_div">
-                <div class="header_div_content">
-                    <div class="acc_cta">
+                <div class="flex_row header_div_content">
+                    <div class="white_txt flex_row acc_cta">
                         <img src="./images/Group 2.png" alt="Login icon">
                         <h4 id="login">Login</h4>
                         <h4 id="sign_up">Sign Up</h4>
                     </div>
-                    <div class="socials">
+                    <div class="flex_row socials">
                         <img src="./images/fb.png" alt="fb">
                         <img src="./images/twitter.png" alt="twitter">
                         <img src="./images/yt.png" alt="youtube">
@@ -29,38 +31,37 @@
         <!-- First Page -->
         <div class="landing_container">
             <div class="landing">
-                <div class="ellipse"></div>
-                <div class="nav">
-                    <div class="title_div">
+                <div class="flex_row nav">
+                    <div class="flex_row title_div">
                         <img src="./images/Vector.png" alt="Logo">
-                        <div class="title_div_text">
+                        <div class="flex_column title_div_text white_txt">
                             <h4>Podcast</h4>
                             <h5>Service Net</h5>
                         </div>
                     </div>
                     <div class="nav_links_div">
-                        <ul>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <button id="sign_up_button">Sign-up</button>
+                        <ul class="flex_row">
+                            <li><a class="white_txt" href="#services">Services</a></li>
+                            <li><a class="white_txt" href="#pricing">Pricing</a></li>
+                            <li><a class="white_txt" href="#testimonials">Testimonials</a></li>
+                            <li><a class="white_txt" href="#portfolio">Portfolio</a></li>
+                            <li><a class="white_txt" href="#contact">Contact</a></li>
+                            <button class="sign_up white_btn blue_txt" id="sign_up_button">Sign-up</button>
                         </ul>
                     </div>
                 </div>
     
-                <div class="half_content landing_content">
-                    <div class="titles">
+                <div class="half_content flex_row landing_content">
+                    <div class="white_txt titles">
                         <h1>You Hit Records,<br>
                             We Handle The Rest</h1>
                         <h4>Save your time and sanity by making us manage  your Podcast
                           World Class Support</h4>
                         <div class="titles_btns">
-                            <button id="sub">Subscribe</button>
-                            <button id="play">
+                            <button id="sub_btn" class="sub blue_txt white_btn">Subscribe</button>
+                            <button id="play_btn" class="play blue_btn">
                                 <img src="./images/play.png" alt="">
-                                <span>Play a Sample</span>
+                                <span class="white_txt">Play a Sample</span>
                             </button>
                         </div>
                     </div>
@@ -70,14 +71,14 @@
         </div>
         <!-- Second Page -->
         <div class="info_page_container">
-            <div class="half_content info_page">
+            <div class="half_content flex_row info_page">
                 <div class="info_text">
                     <h2>Professional Podcast Editing,<br>Mixing and Mastering</h2>
                     <h4>Our podcast editing services are especially suited for today’s podcast<br>  
                         productions, whether audio or video. With us, you wont  believe how<br>
                     easy it is to produce a professional and affordable podcast
                     </h4>
-                    <button class="btn_with_icon">
+                    <button class="blue_btn white_txt btn_with_icon flex_row">
                         <span>Contact Us</span>
                         <img src="./images/ic_baseline-double-arrow.png" alt="">
                     </button>
@@ -89,25 +90,25 @@
 
     <!-- Services Page -->
     <div class="services_container">
-        <div class="services">
+        <div id="services" class="services">
         <h2>Our Services</h2>
-        <div class="card_holder">
+        <div class="flex_row card_holder">
 
             <!--Single Card -->
-            <div class="card">
+            <div class="flex_column card">
                 <div class="icon_holder">
                     <img src="./images/onboarding.png" alt="onboarding">
                     
                 </div>
-                <h2>Onboarding</h2>
-                <ul class="card_items">
+                <h2 class="blue_txt">Onboarding</h2>
+                <ul class="card_items blue_txt">
                     <li>Assigning Accounts Manager</li>
                     <li>Consultation</li>
                     <li>Content Planing</li>
                     <li>Studio Setup Assistance</li>
                     <li>Recording Uploading</li>
                 </ul>
-                <button class="btn_with_icon view_full">
+                <button class="white_txt blue_btn btn_with_icon flex_row view_full">
                     <span>View Full</span>
                     <img src="./images//ic_baseline-double-arrow.png" alt="">
                 </button>
@@ -115,20 +116,20 @@
             <!-- End of Single Card -->
 
             <!--Single Card -->
-            <div class="card">
+            <div class="flex_column card">
                 <div class="icon_holder">
                     <img src="./images/designing.png" alt="onboarding">
                     
                 </div>
-                <h2>Designing</h2>
-                <ul class="card_items">
+                <h2 class="blue_txt">Designing</h2>
+                <ul class="card_items blue_txt">
                     <li>Assigning Accounts Manager</li>
                     <li>Consultation</li>
                     <li>Content Planing</li>
                     <li>Studio Setup Assistance</li>
                     <li>Recording Uploading</li>
                 </ul>
-                <button class="btn_with_icon view_full">
+                <button class="white_txt blue_btn btn_with_icon flex_row view_full">
                     <span>View Full</span>
                     <img src="./images//ic_baseline-double-arrow.png" alt="">
                 </button>
@@ -136,20 +137,20 @@
             <!-- End of Single Card -->
 
             <!--Single Card -->
-            <div class="card">
+            <div class="flex_column card">
                 <div class="icon_holder">
                     <img src="./images/hoisting.png" alt="onboarding">
                     
                 </div>
-                <h2>Hoisting</h2>
-                <ul class="card_items">
+                <h2 class="blue_txt">Hoisting</h2>
+                <ul class="card_items blue_txt">
                     <li>Assigning Accounts Manager</li>
                     <li>Consultation</li>
                     <li>Content Planing</li>
                     <li>Studio Setup Assistance</li>
                     <li>Recording Uploading</li>
                 </ul>
-                <button class="btn_with_icon view_full">
+                <button class="white_txt blue_btn btn_with_icon flex_row view_full">
                     <span>View Full</span>
                     <img src="./images//ic_baseline-double-arrow.png" alt="">
                 </button>
@@ -157,20 +158,20 @@
             <!-- End of Single Card -->
 
             <!--Single Card -->
-            <div class="card">
+            <div class="flex_column card">
                 <div class="icon_holder">
                     <img src="./images/editing.png" alt="onboarding">
                     
                 </div>
-                <h2>Editing</h2>
-                <ul class="card_items">
+                <h2 class="blue_txt">Editing</h2>
+                <ul class="card_items blue_txt">
                     <li>Assigning Accounts Manager</li>
                     <li>Consultation</li>
                     <li>Content Planing</li>
                     <li>Studio Setup Assistance</li>
                     <li>Recording Uploading</li>
                 </ul>
-                <button class="btn_with_icon view_full">
+                <button class="white_txt blue_btn btn_with_icon flex_row view_full">
                     <span>View Full</span>
                     <img src="./images//ic_baseline-double-arrow.png" alt="">
                 </button>
@@ -185,45 +186,45 @@
 
         <!-- Pricing Page -->
         <div class="pricing_container">
-            <div class="pricing">
-                <h2>Our Pricing</h2>
-                <div class="half_content pricing_content">
+            <div id="pricing" class="pricing">
+                <h2 class="blue_txt">Our Pricing</h2>
+                <div class="half_content flex_row pricing_content">
                     <img src="./images/Rectangle 27.png" alt="pricing">
-                    <div class="plans">
+                    <div class="flex_row plans">
                         <!-- Single Plan -->
-                        <div class="plan">
-                            <h3>Premium</h3>
-                            <div class="price">
+                        <div class="flex_column plan">
+                            <h3 class="blue_txt">Premium</h3>
+                            <div class="price blue_txt">
                                 <h2>$256</h2>
                                 <p>per MONTH</p>
                             </div>
-                            <button class="start_btn">
+                            <button class="start_btn purple_btn blue_txt">
                                 start
                             </button>
                         </div>
                         <!-- End of Single Plan -->
 
                         <!-- Single Plan -->
-                        <div class="plan">
-                            <h3>Platinum</h3>
-                            <div class="price">
+                        <div class="flex_column plan">
+                            <h3 class="blue_txt">Platinum</h3>
+                            <div class="price blue_txt">
                                 <h2>$399</h2>
                                 <p>per MONTH</p>
                             </div>
-                            <button class="start_btn">
+                            <button class="start_btn purple_btn blue_txt">
                                 start
                             </button>
                         </div>
                         <!-- End of Single Plan -->
 
                         <!-- Single Plan -->
-                        <div class="plan">
-                            <h3>Basic</h3>
-                            <div class="price">
+                        <div class="flex_column plan">
+                            <h3 class="blue_txt">Basic</h3>
+                            <div class="price blue_txt">
                                 <h2>$199</h2>
                                 <p>per MONTH</p>
                             </div>
-                            <button class="start_btn">
+                            <button class="start_btn purple_btn blue_txt">
                                 start
                             </button>
                         </div>
@@ -239,29 +240,29 @@
 
     <!-- Contact Page -->
     <div class="contact_container">
-        <div class="contact_page">
-            <h2>Contact Today</h2>
-            <div class="half_content contact_content">
+        <div id="contact" class="contact_page">
+            <h2 class="blue_txt">Contact Today</h2>
+            <div class="half_content flex_row">
                 <img src="./images/Rectangle 37.png" alt="Contact">
-                <h3>Trust us <br>with your final results</h3>
+                <h3 class="blue_txt">Trust us <br>with your final results</h3>
             </div>
         </div>
     </div>
 
     <!-- Testimonial -->
     <div class="testimonial_container">
-        <div class="testimonial">
-            <div class="testimonial_header">
+        <div id="testimonials" class="testimonial">
+            <div class="testimonial_header blue_txt">
                 <h2>Testimonial</h2>
                 <h3>See What Our Clients Say About Us</h3>
                 <h5>Customer satisfaction is our priority at all cost, we don’t just deliver a service, but <br>
                     rather an experience</h5>
             </div>
             
-            <div class="testimonial_content">
+            <div class="flex_row testimonial_content">
 
                 <!-- Testimonial Images -->
-                <div class="testimonial_images">
+                <div class="flex_row testimonial_images">
                     <div class="flex_column">
     
                         <!-- Profile Pic -->
@@ -302,7 +303,7 @@
 
                 <!-- Testimonial Quotes -->
                 <div class="testimonial_quotes">
-                    <p class="quote">
+                    <p class="quote blue_txt">
                         While there are many reasons to choose a specific
                         humiification system for every different humidor 
                         setup and preference, incomparing the Prenium 
@@ -320,44 +321,44 @@
     <!-- Footer -->
     <div class="footer_container">
         <div class="footer">
-            <div class="footer_sections">
+            <div class="flex_row footer_sections">
                 <div class="footer_section">
                     <img src="./images/Vector.png" alt="Logo">
-                    <p>
+                    <p class="white_txt">
                         We provide awesome podcast editing
                         services making podcast stand out in 
                         audio quality. We can edit one-to-one
                         interviews, round table disscussions, 
                         solo commentaries,and more!
                     </p>
-                    <div class="footer_socials">
+                    <div class="flex_row footer_socials">
                         <img src="./images/fb.png" alt="facebook">
                         <img src="./images/in.png" alt="LinkedIn">
                         <img src="./images/twitter.png" alt="twitter">
                         <img src="./images/ig.png" alt="IG">
                     </div>
                 </div>
-                <div class="footer_section">
+                <div class="footer_section white_txt">
                     <h4>About Us</h4>
                     <ul>
-                        <li><a href="">Pricing</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Testimonials</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Portfolio</a></li>
+                        <li><a class="white_txt" href="#pricing">Pricing</a></li>
+                        <li><a class="white_txt" href="#services">Services</a></li>
+                        <li><a class="white_txt" href="#testimonials">Testimonials</a></li>
+                        <li><a class="white_txt" href="#contact">Contact</a></li>
+                        <li><a class="white_txt" href="#">Portfolio</a></li>
                     </ul>
                 </div>
-                <div class="footer_section">
+                <div class="footer_section white_txt">
                     <h4>Company Address</h4>
                     <h5>350 North Legon <br>
                         Suite 324-234 <br>
                         Ghana,Accra</h5>
 
-                    <span>
+                    <span class="white_txt">
                         <img src="./images/phone.png" alt="phone">
                         <p>+233 59 401 0464</p>
                     </span>
-                    <span>
+                    <span class="white_txt">
                         <img src="./images/mail.png" alt="email">
                         <p>bernyx@gmail.com</p>
                     </span>
@@ -366,12 +367,11 @@
         </div>
     </div>
     <div class="sub_footer_container">
-        <div class="sub_footer">
+        <div class="flex_row sub_footer white_txt">
             <h5>@2020 Bernix. All Rights Reserved</h5>
             <h5>Terms of Service. Privacy Policy</h5>
         </div>
     </div>
-
 
     </body>
     
